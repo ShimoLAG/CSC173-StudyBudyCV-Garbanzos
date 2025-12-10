@@ -27,10 +27,13 @@ Acquisition: Automated download via Ultralytics API (yolov8n.pt) utilizing pre-t
 
 # 5. Technical Approach
 
-Architecture Sketch: A real-time loop where OpenCV captures webcam frames then YOLOv8 runs inference for distraction detection then MediaPipe extracts hand landmarks for gesture control then Pygame renders the AR overlay and manages game state logic.
-Model: YOLOv8n (Nano) for object detection; MediaPipe Hands for pose estimation.
-Framework: PyTorch (via Ultralytics) for the backend; OpenCV and Pygame for the frontend application.
-Hardware: Local CPU (optimized for real-time ~30 FPS on standard laptops) or Local GPU (NVIDIA CUDA) if available.
+1. Architecture Sketch: A real-time loop where OpenCV captures webcam frames then YOLOv8 runs inference for distraction detection then MediaPipe extracts hand landmarks for gesture control then Pygame renders the AR overlay and manages game state logic.
+
+2. Model: YOLOv8n (Nano) for object detection; MediaPipe Hands for pose estimation.
+   
+3. Framework: PyTorch (via Ultralytics) for the backend; OpenCV and Pygame for the frontend application.
+   
+4. Hardware: Local CPU (optimized for real-time ~30 FPS on standard laptops) or Local GPU (NVIDIA CUDA) if available.
 
 # 6. Expected Challenges & Mitigations
 
