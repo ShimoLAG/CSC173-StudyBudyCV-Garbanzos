@@ -16,6 +16,7 @@ Keywords: Augmented Reality, Computer Vision, Gamification, Human-Computer Inter
 # Introduction
 
  **Problem Statement**
+ 
  The Challenge As a student interested in computer science and game development, I often find myself caught in a cycle of procrastination. Despite knowing how to study, the urge to check my phone or tab out to social media is a constant battle. Standard Pomodoro timers feel "dead" they count down, but they don't care if I get distracted. I need a system that doesn't just track time, but actively keeps me accountable.
 
 The Solution I am building this project to solve my own need for an "accountability partner" that is always watching. By combining my interest in coding (Python/Godot) with my need for focus, I aim to create a "Study Buddy" that makes the abstract concept of discipline tangible. If I pick up my phone, I want immediate feedback (the chicken panicking). If I finish a study session, I want a reward that feels earned (cooking minigames). This project is my attempt to hack my own dopamine system to make studying as addictive as the distractions I am trying to avoid.
@@ -26,4 +27,40 @@ The Solution I am building this project to solve my own need for an "accountabil
 3. To visualize my productivity: I want to see my study hours turn into something concrete a growing chicken and a collection of eggs so that I feel a sense of progression even when the coursework is difficult.
 4. To create a "frictionless" interface: I want to interact with the app using only hand gestures (pinching/dragging) so that I don't have to touch my mouse or keyboard, keeping my hands free for writing or reading notes.
 
+# Related Work
 
+1. Forest: Stay Focused, Be Present https://www.forestapp.cc/
+2. Habitica: Gamify Your Life https://habitica.com/
+3. Student Distraction Detection Using Computer Vision and Machine Learning (2020/2024) https://www.researchgate.net/publication/349645367
+4. Focus Plant: Focus Timer & Game https://shikudo.com/focus-plant
+
+# Methodology
+
+** Dataset **
+
+1. Source: Microsoft COCO (Common Objects in Context) Dataset
+2. Classes: 80 classes (including "Cell Phone")
+3. Size: 330,000 images (Pre-trained by Ultralytics)
+4. Preprocessing: Standard YOLOv8 pre-processing (Auto-scaling, normalization)
+
+** Architecture **
+Model: YOLOv8n (Nano)
+Weights: yolov8n.pt
+Inference Size: 640x640 pixels
+
+** Performance (Standard Benchmarks) **
+mAP@50 (Mean Average Precision): 52.5% (approx for Nano model on COCO)
+Speed: ~80 FPS on CPU (Real-time)
+
+# Installations
+
+1. Clone repo: git clone https://github.com/shimoLAG/CSC173-StudyBudyCV-Garbanzos
+2. Install deps: pip install -r requirements.txt
+3. Download weights: The YOLOv8n model (yolov8n.pt) will download automatically on the first run.
+
+requirements.txt: 
+pygame>=2.5.0
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+ultralytics>=8.0.0
+numpy
