@@ -38,5 +38,7 @@ Acquisition: Automated download via Ultralytics API (yolov8n.pt) utilizing pre-t
 # 6. Expected Challenges & Mitigations
 
 Challenge: False positives (calculators/wallets as phones) Solution: Confidence threshold >0.5 + Temporal consistency check (must detect for >1s).
+
 Challenge: High CPU latency (Running 2 AI models) Solution: Asynchronous processing (Run YOLO every 30 frames; MediaPipe every frame).
+
 Challenge: 2D Depth perception limits Solution: Use "Pinch" gesture (Index-Thumb distance) as a binary interaction trigger.
