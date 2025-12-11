@@ -19,7 +19,10 @@ This project bridges this gap by developing an AR-based desktop companion that a
 # 4. Dataset Plan
 
 Source: MS COCO 2017 (Common Objects in Context) [118k Train / 5k Val images]
+https://www.kaggle.com/datasets/sabahesaraki/2017-2017/data
+
 Classes: cell phone (Class ID: 67), remote (Class ID: 65)
+
 Acquisition: Automated download via Ultralytics API (yolov8n.pt) utilizing pre-trained weights from the official COCO benchmark.
 
 # 5. Technical Approach
