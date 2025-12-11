@@ -17,7 +17,7 @@ Keywords: Augmented Reality, Computer Vision, Gamification, Human-Computer Inter
 
  **Problem Statement**
  
- As a student interested in game development, I often find myself caught in a cycle of procrastination. Standard Pomodoro timers feel "dead" to me—they count down, but they don't care if I check my phone. I needed an accountability partner that is always watching.
+ As a student interested in game development, I often find myself caught in a cycle of procrastination. Standard Pomodoro timers feel "dead" to me, they count down, but they don't care if I check my phone. I needed an accountability partner that is always watching.
 
 This project is my attempt to "hack" my own dopamine system. I built a virtual chicken that panics when it sees my phone (using YOLOv8) and demands physical "cooking" minigames (using MediaPipe) during breaks. It turns the discipline of studying into a game I actually want to play.
 
