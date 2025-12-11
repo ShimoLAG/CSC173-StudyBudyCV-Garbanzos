@@ -17,9 +17,15 @@ Keywords: Augmented Reality, Computer Vision, Gamification, Human-Computer Inter
 
  **Problem Statement**
  
- The Challenge As a student interested in computer science and game development, I often find myself caught in a cycle of procrastination. Despite knowing how to study, the urge to check my phone or tab out to social media is a constant battle. Standard Pomodoro timers feel "dead" they count down, but they don't care if I get distracted. I need a system that doesn't just track time, but actively keeps me accountable.
+ As a student interested in game development, I often find myself caught in a cycle of procrastination. Standard Pomodoro timers feel "dead" to me—they count down, but they don't care if I check my phone. I needed an accountability partner that is always watching.
 
-The Solution I am building this project to solve my own need for an "accountability partner" that is always watching. By combining my interest in coding (Python/Godot) with my need for focus, I aim to create a "Study Buddy" that makes the abstract concept of discipline tangible. If I pick up my phone, I want immediate feedback (the chicken panicking). If I finish a study session, I want a reward that feels earned (cooking minigames). This project is my attempt to hack my own dopamine system to make studying as addictive as the distractions I am trying to avoid.
+This project is my attempt to "hack" my own dopamine system. I built a virtual chicken that panics when it sees my phone (using YOLOv8) and demands physical "cooking" minigames (using MediaPipe) during breaks. It turns the discipline of studying into a game I actually want to play.
+
+Formally, this is a desktop application combining Augmented Reality (AR) and Computer Vision. It addresses sedentary study habits and digital distraction by:
+
+1. Active Monitoring: Real-time smartphone detection using YOLOv8.
+2. Touchless Interface: Gesture-based interaction using MediaPipe.
+3. Gamification: A resource-management loop built in Pygame to incentivize focus.
 
 **Objectives**
 1. To automate my self-discipline: I want to use YOLOv8 object detection to catch myself reaching for my phone before I even realize I'm doing it, creating an external layer of accountability.
