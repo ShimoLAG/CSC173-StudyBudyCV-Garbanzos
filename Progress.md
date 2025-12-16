@@ -1,4 +1,4 @@
-# Project Development Progress - [Your Last Name]
+# Project Development Progress - Louise Antondy Garbanzos
 
 ## 1. Model Selection & Architecture
 - **Model:** YOLOv8 Nano (`yolov8n`)
