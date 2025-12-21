@@ -63,6 +63,7 @@ Speed: ~80 FPS on CPU (Real-time)
 1. Clone repo: git clone https://github.com/shimoLAG/CSC173-StudyBudyCV-Garbanzos
 2. Install deps: pip install -r requirements.txt
 3. Download weights: The YOLOv8n model (yolov8n.pt) will download automatically on the first run.
+4. Video Link: https://drive.google.com/file/d/1JFA-y38DIBsmFoTOmTxSUt05yuS8C3nv/view?usp=sharing
 
 requirements.txt: 
 pygame>=2.5.0
